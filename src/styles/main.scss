@@ -52,6 +52,7 @@ h3 {
 .tech-skills div {
     background: transparent;
     border-radius: 5px;
+    background: #fff;
     margin: 10px;
     padding: 10px 20px;
     transition: background 0.3s;
@@ -195,6 +196,12 @@ footer {
     grid-template-columns: repeat(2, 1fr);
     gap: 24px;
     margin: 24px 0;
+}
+
+@media (max-width: 700px) {
+    .project-list {
+        grid-template-columns: 1fr; // Stack projects vertically on small screens
+    }
 }
 
 .project-item {
