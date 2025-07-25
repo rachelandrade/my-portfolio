@@ -89,15 +89,15 @@ footer {
 }
 
 .about-section {
-  background: #fff;
-  border: 1px solid #e0e0e0;
-  border-radius: 12px;
-  padding: 2rem;
-  max-width: 95%;
-  margin: 2rem auto;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.05); // same as projects
-  font-family: 'Segoe UI', 'Arial', sans-serif;
-  color: #222;
+    background: #fff;
+    border: 1px solid #e0e0e0;
+    border-radius: 12px;
+    padding: 2rem;
+    max-width: 95%;
+    margin: 2rem auto;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05); // same as projects
+    font-family: 'Segoe UI', 'Arial', sans-serif;
+    color: #222;
 }
 
 .about-section h2 {
@@ -113,10 +113,12 @@ footer {
     font-size: 1.05rem;
     line-height: 1.7;
 }
+
 .about-heading {
-  color: #222; // Match Projects heading color
-  text-align: left;
+    color: #222; // Match Projects heading color
+    text-align: left;
 }
+
 .tech-skills {
     overflow: hidden;
     display: flex;
@@ -127,14 +129,14 @@ footer {
 }
 
 .skills-marquee {
-  width: 100%;
-  overflow: hidden;
-  position: relative;
-  background: #fff;
-  border-radius: 8px;
-  border: 1px solid #e0e0e0;
-  padding: 12px 0;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.05); 
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+    background: #fff;
+    border-radius: 8px;
+    border: 1px solid #e0e0e0;
+    padding: 12px 0;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
 }
 
 .skills-track {
@@ -231,45 +233,63 @@ footer {
 .project-item:hover {
     box-shadow: 0 4px 16px rgba(0, 0, 0, 0.12);
 }
+
 .contact-section {
-  display: flex;
-  flex-direction: row;   // Cards in the same line
-  gap: 1rem;
-  align-items: center;
-  justify-content: center;
-  background: transparent; // Remove background color
+    display: flex;
+    flex-direction: row; // Cards in the same line
+    gap: 1rem;
+    align-items: center;
+    justify-content: center;
+    background: transparent; // Remove background color
+    flex-wrap: wrap;
 }
 
-.contact-btn {
-  display: flex;
-  align-items: center;
-  gap: 12px;
-  background: transparent; // Remove button background color
-  color: #1DA1F2;
-  border: 1px solid #e0e0e0;
-  border-radius: 8px;
-  padding: 0.75rem 1.5rem;
-  font-size: 1.1rem;
-  font-weight: 500;
-  text-decoration: none;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
-  transition: background 0.2s, box-shadow 0.2s, color 0.2s;
+@media (max-width: 600px) {
+  .contact-section {
+    flex-direction: column; // Stack vertically on mobile
+    align-items: stretch;
+    gap: 0.75rem;
+  }
+  .contact-btn {
+    justify-content: center;
+    width: 85%;
+    min-width: 0;
+    font-size: 1rem;
+    padding: 0.75rem 1rem;
+    align-items: center;
+  }
 }
 
-.contact-btn:hover {
-  background: #f5f8fa;
-  box-shadow: 0 4px 16px rgba(0,0,0,0.12);
-  color: #0d8ddb;
-  text-decoration: none;
-}
+    .contact-btn {
+        display: flex;
+        align-items: center;
+        gap: 12px;
+        background: transparent; // Remove button background color
+        color: #1DA1F2;
+        border: 1px solid #e0e0e0;
+        border-radius: 8px;
+        padding: 0.75rem 1.5rem;
+        font-size: 1.1rem;
+        font-weight: 500;
+        text-decoration: none;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+        transition: background 0.2s, box-shadow 0.2s, color 0.2s;
+    }
 
-.contact-icon {
-  font-size: 1.4em;
-}
+    .contact-btn:hover {
+        background: #f5f8fa;
+        box-shadow: 0 4px 16px rgba(0, 0, 0, 0.12);
+        color: #0d8ddb;
+        text-decoration: none;
+    }
 
-.contact-value {
-  margin-left: 8px;
-  font-weight: 400;
-  font-size: 1em;
-  opacity: 0.9;
-}
+    .contact-icon {
+        font-size: 1.4em;
+    }
+
+    .contact-value {
+        margin-left: 8px;
+        font-weight: 400;
+        font-size: 1em;
+        opacity: 0.9;
+    }
